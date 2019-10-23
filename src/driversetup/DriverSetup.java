@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class DriverSetup {
 
@@ -28,7 +27,7 @@ public class DriverSetup {
 		{
 		//To start Chrome Driver
 		case "1":
-		      System.setProperty("webdriver.chrome.driver", "C:\\Test Automation\\Software\\chrome\\New Version\\chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver", "C:\\****\\chrome\\New Version\\chromedriver.exe");
 		      ChromeOptions options=new ChromeOptions();
 		      options.addArguments("--disable-notifications");
 		      driver=new ChromeDriver(options);
@@ -36,7 +35,7 @@ public class DriverSetup {
 		
 		//To start Firefox Driver
 		case "2":
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\COGNIZ56\\Downloads\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\***\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 			break;
 		}   

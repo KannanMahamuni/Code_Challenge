@@ -69,9 +69,7 @@ public class WebdriverMethods {
 	           element.clear();
 	           JavascriptExecutor executor = (JavascriptExecutor)driver;
 	           executor.executeScript("arguments[0].value=value='"+value+"';", element);
-	           //executor.executeScript(document.getElementByID
-	           //executor.executeScript("document.getElementById('"+locator+"').value='"+value+"'");
-	           //executor.executeScript("arguments[0].value=value='"+value+"';", locator);
+
 	    } 
 	   
 		public void performHandleNewWindowWithScreen(String title, String Page) {
