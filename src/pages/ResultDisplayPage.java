@@ -68,7 +68,10 @@ public class ResultDisplayPage {
 		        
 		        System.out.println("Locating the Best Seller "+(i+1)+"  ");
 	    }
+		int count = bestSellers.size();
+		System.out.println("There are "+count+" Best seller item in the Headphone page and added to cart" );
 
 	}
+	
 
 }
