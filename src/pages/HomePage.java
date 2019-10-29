@@ -27,7 +27,8 @@ public class HomePage {
 
 	public void searchheadphone() throws Exception
 	{
-		//Searching the Headphone in Amazon Home page	
+		//Searching the Headphone in Amazon Home page
+		driver.manage().window().maximize();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		SearchBox.click();
 		WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(By.id("twotabsearchtextbox")));

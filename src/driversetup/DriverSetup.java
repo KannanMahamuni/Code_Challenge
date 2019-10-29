@@ -27,7 +27,7 @@ public class DriverSetup {
 		{
 		//To start Chrome Driver
 		case "1":
-		      System.setProperty("webdriver.chrome.driver", "C:\\****\\chrome\\New Version\\chromedriver.exe");
+		      System.setProperty("webdriver.chrome.driver", "C:\\Test Automation\\Software\\chrome\\New Version\\chromedriver.exe");
 		      ChromeOptions options=new ChromeOptions();
 		      options.addArguments("--disable-notifications");
 		      driver=new ChromeDriver(options);

@@ -2,6 +2,8 @@ package pages;
 
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
@@ -15,17 +17,31 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ResultDisplayPage {
 	
-	
 	WebDriver driver;
 	
 	@FindBy(xpath="(//span[contains(@id,'-best-seller-label')])[1]")
 	WebElement BestSeller;
 	
+	@FindBy(xpath="//h4[text()='Add to your order']")
+	WebElement Addtoyourtorder;
+	
+	@FindBy(xpath="//button[@id='siNoCoverage-announce']")
+	WebElement NothanksButton;
+	
+	@FindBy(xpath="//button[@id='attachSiNoCoverage-announce']")
+	WebElement NothanksButton2;
+	
+	@FindBy(xpath="(//span/button[contains(text(),'No Thanks')])[3]")
+	WebElement NothanksButtontext;
+
+	@FindBy(xpath="//a[@id='attach-close_sideSheet-link']")
+	WebElement closebutton;
+	
 	public ResultDisplayPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	
 	
 	public boolean performExplictWait(WebElement locator, int wait_time, boolean found) throws Exception {
 		boolean elementFound = false;
@@ -44,8 +60,9 @@ public class ResultDisplayPage {
 	
 	public void bestselleraddtocart() throws Exception
 	{
-		Thread.sleep(30000);
-		//driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.MINUTES);
+		WebDriverWait wait = new WebDriverWait(driver, 25);
+		//Thread.sleep(30000);
+		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.MINUTES);
 		performExplictWait(BestSeller,10,true);
 		Actions action = new Actions(driver);
 		
@@ -59,11 +76,35 @@ public class ResultDisplayPage {
 		   
 		        //Adding the Best seller to Cart
 		        wait.until(ExpectedConditions.elementToBeClickable(By.id("add-to-cart-button"))).click(); 
-		        System.out.println("Best Seller "+(i+1)+" is added to the Cart");
+		        if(performExplictWait(Addtoyourtorder,10,false))
+		        {
+		        	performExplictWait(NothanksButton,5,false);
+		        	NothanksButton.click();
+		        }
 		        
-		        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@class,'uss-o-close-icon uss-o-close-icon-medium') or contains(@class,'a-link-normal close-button')]"))).click();
+		        if(performExplictWait(NothanksButton2,10,false))
+		        {
+		        	NothanksButton2.click();
+		        }
+		        
+		        if(performExplictWait(closebutton,10,false))
+		        {
+		        	closebutton.click();
+		        }
+		        
+		        if(performExplictWait(NothanksButtontext,10,false))
+		        {
+		        	NothanksButtontext.click();
+		        }
+		        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='siAddCoverage-announce']"))).click();
+		        System.out.println("Best Seller "+(i)+" is added to the Cart");
+		        
+		        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@class,'uss-o-close-icon uss-o-close-icon-medium') or contains(@class,'a-link-normal close-button')]"))).click();
+		        driver.navigate().back();
+		        
 		        //back to headphone best seller page
 		        driver.navigate().back();
+		      
 		        driver.navigate().refresh();
 		        
 		        System.out.println("Locating the Best Seller "+(i+1)+"  ");
