@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="181470" started-at="2019-10-29T09:09:42Z" finished-at="2019-10-29T09:12:44Z">
+  <suite name="Default suite" duration-ms="227148" started-at="2019-10-29T12:41:12Z" finished-at="2019-10-29T12:44:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="181470" started-at="2019-10-29T09:09:42Z" finished-at="2019-10-29T09:12:44Z">
+    <test name="Default test" duration-ms="227148" started-at="2019-10-29T12:41:12Z" finished-at="2019-10-29T12:44:59Z">
       <class name="test.TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.TestCase@e580929]" name="beforeMethod" is-config="true" duration-ms="16973" started-at="2019-10-29T05:09:42Z" finished-at="2019-10-29T05:09:59Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.TestCase@e580929]" name="beforeMethod" is-config="true" duration-ms="17766" started-at="2019-10-29T08:41:12Z" finished-at="2019-10-29T08:41:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="addtocart()[pri:0, instance:test.TestCase@e580929]" name="addtocart" duration-ms="163228" started-at="2019-10-29T05:09:59Z" finished-at="2019-10-29T05:12:42Z">
+        <test-method status="PASS" signature="addtocart()[pri:0, instance:test.TestCase@e580929]" name="addtocart" duration-ms="207900" started-at="2019-10-29T08:41:29Z" finished-at="2019-10-29T08:44:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocart -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestCase@e580929]" name="tearDown" is-config="true" duration-ms="1251" started-at="2019-10-29T05:12:42Z" finished-at="2019-10-29T05:12:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.TestCase@e580929]" name="tearDown" is-config="true" duration-ms="1459" started-at="2019-10-29T08:44:57Z" finished-at="2019-10-29T08:44:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
