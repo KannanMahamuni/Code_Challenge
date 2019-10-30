@@ -38,7 +38,7 @@ public class TestCase extends DriverSetup {
 		ResultDisplayPage rdp = new ResultDisplayPage(driver);
 		rdp.bestselleraddtocart();	
 		}
-		catch (IOException e) 
+		catch (Exception e) 
 		{
 			e.printStackTrace();
 		} 
