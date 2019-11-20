@@ -1,3 +1,17 @@
 [1023/015745.403:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [1023/015745.421:ERROR:exception_snapshot_win.cc(98)] thread ID 22460 not found in process
 [1023/015745.421:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[1111/075021.926:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1112/011244.661:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1112/075024.577:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1113/011247.642:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1113/075027.557:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1114/075030.181:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1115/075033.162:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1116/075036.620:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1117/075039.958:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1118/075043.087:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[1118/111516.666:ERROR:file_io_win.cc(161)] CreateFile C:\Users\COGNIZ56\AppData\Local\Temp\scoped_dir22324_26035\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1118/111516.670:ERROR:file_io_win.cc(170)] CreateFile C:\Users\COGNIZ56\AppData\Local\Temp\scoped_dir22324_26035\Crashpad\reports\6d49e5bf-484f-42c0-8b8e-5790ad7b6027.dmp: The system cannot find the path specified. (0x3)
+[1118/111516.670:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[1119/075046.578:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

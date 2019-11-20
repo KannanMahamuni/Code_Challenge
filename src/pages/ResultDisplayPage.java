@@ -67,6 +67,7 @@ public class ResultDisplayPage {
 		Actions action = new Actions(driver);
 		
 		//Getting the Best Seller Headphone elements
+		//span[text()='Best Seller']/ancestor::div[@class='sg-row']/following-sibling::div[@class='sg-row']//h2/a/span
 		List<WebElement> bestSellers = driver.findElements(By.xpath("//span[text()='Best Seller']/ancestor::div[@class='sg-row']/following-sibling::div[@class='sg-row']/child::div[1]"));
 		for(int i=1;i<=bestSellers.size();i++) {
 				Thread.sleep(5000);
@@ -96,10 +97,9 @@ public class ResultDisplayPage {
 		        {
 		        	NothanksButtontext.click();
 		        }
-		        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='siAddCoverage-announce']"))).click();
+		        
 		        System.out.println("Best Seller "+(i)+" is added to the Cart");
 		        
-		        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@class,'uss-o-close-icon uss-o-close-icon-medium') or contains(@class,'a-link-normal close-button')]"))).click();
 		        driver.navigate().back();
 		        
 		        //back to headphone best seller page

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Addtocart" parallel="classes" thread-count="1">
-	<parameter name="browser-name" value="Chrome" /> <!-- Possible browser values  - "Chrome", "Firefox" , "InternetExplorer" -->
+	<parameter name="browser-name" value="Chrome" />
 
 	<test name="AmazonAddtocart">
 	    <classes>
